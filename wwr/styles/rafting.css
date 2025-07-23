@@ -1,19 +1,10 @@
 :root {
-    --primary-color: #055a05;
-    /* forest green */
-    --secondary-color: #f4a261;
-    /* warm sand */
-    --accent1-color: #264653;
-    /* dark slate blue */
-    --accent2-color: #e9c46a;
-    /* light golden yellow */
+    --primary-color: #055a05;      
+    --secondary-color: #f4a261;     
+    --accent1-color: #264653;       
+    --accent2-color: #e9c46a;       
     --heading-font: "Merriweather Sans", sans-serif;
     --body-font: "Lato", sans-serif;
-}
-
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
 }
 
 * {
@@ -27,6 +18,11 @@ body {
     color: var(--accent1-color);
 }
 
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
 header,
 main,
 footer {
@@ -36,7 +32,7 @@ footer {
 
 h1,
 h2 {
-    font-family: var(--heading-font); /* ✅ Fixed this line */
+    font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
@@ -72,6 +68,11 @@ article {
     color: var(--accent1-color);
 }
 
+.hero article img {
+    float: right;
+    width: 125px;
+}
+
 h1 {
     position: absolute;
     top: 20px;
@@ -80,10 +81,103 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff; /* white text - make sure there is enough contrast with the background color */
+    color: #fff; 
+}
+.header-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
 }
 
-.hero article img{
-    float: right;
-    width: 125px;
+.header-container img {
+    width: 80px;
+    height: auto;
+}
+
+.header-container h1 {
+    font-size: 1.5rem;
+    color: var(--accent2-color);
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--accent2-color);
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+    background-color: #f1f1f1;
+}
+
+.history h2 {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #fefae0;
+    text-align: center;
+}
+
+.adventure h2 {
+    grid-column: span 5;
+    margin-bottom: 1rem;
+}
+
+.adventure figure {
+    margin: 0;
+}
+
+.adventure img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.adventure figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--accent1-color);
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+footer .socialmedia {
+    display: flex;
+    gap: 1rem;
+}
+
+footer .socialmedia img {
+    width: 24px;
+    height: 24px;
 }
