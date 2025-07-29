@@ -23,23 +23,17 @@ header {
     color: var(--accent2-color);
 }
 
-header,
-main,
-footer {
+header, main, footer {
     width: 840px;
     margin: 0 auto;
 }
 
-h1,
-h2 {
+h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-nav,
-p,
-section,
-article {
+nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
