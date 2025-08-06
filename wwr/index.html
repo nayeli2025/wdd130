@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - White Water Rafting Company</title>
+  <meta name="description" content="Welcome to White Water Rafting Company. Explore our thrilling rafting trips and more.">
+  <meta name="author" content="Nayeli Veloz">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="header-container">
+      <img src="images/www-logo.png" alt="Rafting Company Logo">
+      <h1>White Water Rafting Company</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <img src="images/heroimage.jpg" alt="Rafting on a wild river">
+      <div class="hero-content">
+        <h2>Adventure Awaits You!</h2>
+        <p>Join us for the ultimate white water rafting experience.</p>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <h2>Sign Up for Our Newsletter</h2>
+      <form action="/submit_newsletter" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+
+    <section class="cta">
+      <h2>Ready for the Thrill?</h2>
+      <p>Explore our exciting rafting trips and choose your next adventure.</p>
+      <a href="trips.html" class="cta-button">See Our Trips</a>
+    </section>
+
+    <section class="content-grid">
+      <div class="content-item">
+        <img src="images/rafting1.jpg" alt="Rafting Trip">
+        <h3>Thrilling Rafting Adventures</h3>
+        <p>Explore the wildest rapids and experience nature in its rawest form.</p>
+      </div>
+      <div class="content-item">
+        <img src="images/rafting2.jpg" alt="Group Rafting">
+        <h3>Group and Family Packages</h3>
+        <p>Bring your friends and family for an unforgettable adventure together.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <nav class="socialmedia">
+      <a href="https://facebook.com">
+        <img src="images/facebook.png" alt="Facebook logo">
+      </a>
+      <a href="https://twitter.com">
+        <img src="images/twitter.png" alt="Twitter logo">
+      </a>
+      <a href="https://instagram.com">
+        <img src="images/instagram.png" alt="Instagram logo">
+      </a>
+    </nav>
+  </footer>
+
+</body>
+
+</html>
